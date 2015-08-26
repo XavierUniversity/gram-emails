@@ -1,0 +1,3296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no"/>
+<title>Master Template</title>
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic,greek" rel="stylesheet" type="text/css">
+<!--[if mso]>
+<style type="text/css">
+td,span,a{font-family: Arial, sans-serif !important;}
+</style>
+<![endif]-->
+<style type="text/css">
+
+		
+		/* Resets: see reset.css for details */
+		.ReadMsgBody { width: 100%; background-color: #ffffff;}
+		.ExternalClass {width: 100%; background-color: #ffffff;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span,
+		.ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+		#outlook a{ padding:0;}
+		body{width: 100%; height: 100%; background-color: #ffffff; margin:0; padding:0;}
+		body{ -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+		html{width:100%;}
+		table {mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;}
+		table td {border-collapse:collapse;}
+		table p{margin:0;}
+		br, strong br, b br, em br, i br { line-height:100%; }
+		div, p, a, li, td { -webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+		h1, h2, h3, h4, h5, h6 { line-height: 100% !important; -webkit-font-smoothing: antialiased; }
+		span a { text-decoration: none !important;}
+		a{ text-decoration: none !important; }
+		img{height: auto !important; line-height: 100%; outline: none; text-decoration: none; display:block !important; -ms-interpolation-mode:bicubic;}
+		.yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited,
+		.yshortcuts a:hover, .yshortcuts a span { text-decoration: none !important; border-bottom: none !important;}
+		/*mailChimp class*/
+		.default-edit-image{
+			height:20px;
+		}
+		.tpl-repeatblock {
+			padding: 0px !important;
+			border: 1px dotted rgba(0,0,0,0.2);
+		}
+		
+		
+		@media only screen and (max-width: 640px){
+			/* mobile setting */
+			table[class="container"]{width:100%!important; max-width:100%!important; min-width:100%!important;
+				padding-left:20px!important; padding-right:20px!important; text-align: center!important; clear: both;}
+			td[class="container"]{width:100%!important; padding-left:20px!important; padding-right:20px!important; clear: both;}
+			table[class="full-width"]{width:100%!important; max-width:100%!important; min-width:100%!important; clear: both;}
+			table[class="full-width-center"] {width: 100%!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+			table[class="auto-center"] {width: auto!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+			*[class="auto-center-all"]{width: auto!important; max-width:75%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+			*[class="auto-center-all"] * {width: auto!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+			table[class="col-3"],table[class="col-3-not-full"]{width:30.35%!important; max-width:100%!important;}
+			table[class="col-2"]{width:47%!important; max-width:100%!important;}
+			td[class="col-top"]{display:table-header-group !important;}
+			td[class="col-bottom"]{display:table-footer-group !important;}
+			*[class="full-block"]{width:100% !important; display:block !important; }
+			/* image */
+			td[class="image-full-width"] img{width:100% !important; height:auto !important; max-width:100% !important;}
+			/* helper */
+			table[class="space-w-20"]{width:3.5%!important; max-width:20px!important; min-width:3.5% !important;}
+			table[class="space-w-20"] td:first-child{width:3.5%!important; max-width:20px!important; min-width:3.5% !important;}
+			table[class="space-w-25"]{width:4.45%!important; max-width:25px!important; min-width:4.45% !important;}
+			table[class="space-w-25"] td:first-child{width:4.45%!important; max-width:25px!important; min-width:4.4% !important;}
+			table[class="fix-w-20"]{width:20px!important; max-width:20px!important; min-width:20px!important;}
+			table[class="fix-w-20"] td:first-child{width:20px!important; max-width:20px!important; min-width:20px !important;}
+			*[class="h-10"]{display:block !important;  height:10px;}
+			*[class="h-20"]{display:block !important;  height:20px;}
+			*[class="h-30"]{display:block !important; height:30px;}
+			*[class="h-40"]{display:block !important;  height:40px;}
+			*[class="remove-640"]{display:none !important;}
+			*[class="text-left"]{text-align:left !important;}
+			*[class="clear-pad"]{padding:0 !important;}
+		}
+		@media only screen and (max-width: 479px){
+			/* mobile setting */
+			table[class="container"]{width:100%!important; max-width:100%!important; min-width:124px!important;
+				padding-left:15px!important; padding-right:15px!important; text-align: center!important; clear: both;}
+			td[class="container"]{width:100%!important; padding-left:15px!important; padding-right:15px!important; text-align: center!important; clear: both;}
+			table[class="full-width"]{width:100%!important; max-width:100%!important; min-width:124px!important; clear: both;}
+			table[class="full-width-center"] {width: 100%!important; max-width:100%!important; min-width:124px!important; text-align: center!important; clear: both; margin:0 auto; float:none;}
+			*[class="auto-center-all"]{width: 100%!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+			*[class="auto-center-all"] * {width: auto!important; max-width:100%!important;  text-align: center!important; clear: both; margin:0 auto; float:none;}
+			table[class="col-3"]{width:100%!important; max-width:100%!important; text-align: center!important; clear: both;}
+			table[class="col-3-not-full"]{width:30.35%!important; max-width:100%!important; }
+			table[class="col-2"]{width:100%!important; max-width:100%!important; text-align: center!important; clear: both;}
+			*[class="full-block-479"]{display:block !important; width:100% !important; text-align: center!important; clear: both; }
+			/* image */
+			td[class="image-full-width"] img{width:100% !important; height:auto !important; max-width:100% !important; min-width:124px !important;}
+			td[class="image-min-80"] img{width:100% !important; height:auto !important; max-width:100% !important; min-width:80px !important;}
+			td[class="image-min-100"] img{width:100% !important; height:auto !important; max-width:100% !important; min-width:100px !important;}
+			/* halper */
+			table[class="space-w-20"]{width:100%!important; max-width:100%!important; min-width:100% !important;}
+			table[class="space-w-20"] td:first-child{width:100%!important; max-width:100%!important; min-width:100% !important;}
+			table[class="space-w-25"]{width:100%!important; max-width:100%!important; min-width:100% !important;}
+			table[class="space-w-25"] td:first-child{width:100%!important; max-width:100%!important; min-width:100% !important;}
+			*[class="remove-479"]{display:none !important;}
+			/*constant contact*/
+			table[width="595"]{
+				width:100% !important;
+			}
+			
+		}
+		td ul{list-style: initial; margin:0; padding-left:20px;}.default-edit-image{height:20px;} tr.tpl-repeatblock , tr.tpl-repeatblock > td{ display:block !important;} .tpl-repeatblock {padding: 0px !important;border: 1px dotted rgba(0,0,0,0.2);}</style>
+</head>
+<body  style="font-size:12px; width:100%; height:100%;">
+<table id="mainStructure" width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#DEE5E9;">
+					<!-- HEADER -->
+				<tr>
+					<td valign="top" align="center" style="background-color: rgb(0, 40, 87);" class="container">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="min-width: 600px; margin: 0px auto; background-color: rgb(0, 40, 87);" class="container">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start content container -->
+							<tr>
+								<td valign="top" align="center">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+										
+										<tbody><tr>
+											<td valign="middle"><table align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/logo.png" width="190" style="max-width: 240px; display: block !important;" alt="" border="0" hspace="0" vspace="0">
+															</a>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="full-width" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" class="h-30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table align="right" border="0" cellpadding="0" cellspacing="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td valign="middle">
+															<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+																<tbody><tr>
+																	<td align="center" valign="middle" style="padding: 3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-facebook-footer.png" width="25" alt="icon-facebook-footer" style="max-width: 25px; display: block;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding: 3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-twitter-footer.png" width="25" alt="icon-twitter-footer" style="max-width: 25px; display: block;">
+																		</a>
+																	</td>
+																
+																
+																	<td align="center" valign="middle" style="padding: 3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-youtube-footer.png" width="25" alt="icon-youtube-footer" style="max-width: 25px; display: block;">
+																		</a>
+																	</td>
+																	
+																	
+																	<td align="center" valign="middle" style="padding: 3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-linkedin-footer.png" width="25" alt="icon-linkedin-footer" style="max-width: 25px; display: block;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding: 3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-instagram-footer.png" width="25" alt="icon-instagram-footer" style="max-width: 25px; display: block;">
+																		</a>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container -->
+							
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="1">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+										<tbody><tr>
+											<td valign="top" height="1" style="font-size: 0px; line-height: 0; border-collapse: collapse; background-color: rgb(0, 40, 87);">
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END HEADER-->
+			
+				<!-- START LAYOUT-2 HEADING TEXT / HEADER IMAGE -->
+				<tr>
+					<td valign="top" align="center" style="background-image: url(images/bg-image1.jpg); background-color: rgb(63, 86, 112); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat !important;" class="container">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="80" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr dup="0">
+								<td align="center" style="font-size: 48px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+									<span style="color: rgb(255, 255, 255); font-size: 48px; line-height: 48px;">WELCOME TO FERIO</span>
+								</td>
+							</tr>
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr dup="0">
+								<td align="center" style="font-size: 18px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+									<span style="color: #0099CC; font-size: 18px; line-height: 24px;">
+										THE PROFESSIONAL<span style="color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">&nbsp;EMAIL</span>
+									</span>
+								</td>
+							</tr>
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr dup="0">
+								<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(233, 233, 233); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo iaculis lectus feugiat faucibus. Curabitur aliquet, diam vel fringilla onsectetur adipiscing elit.
+								</td>
+							</tr>
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!--start button-->
+							<tr>
+								<td valign="top" align="center">
+									<table width="auto" align="center" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+										<tbody><tr>
+											<!-- start button border -->
+											<td valign="top" class="full-block-479" dup="0">
+												<table width="auto" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;  padding-top:8px; padding-bottom:8px; padding-left:8px; padding-right:8px;">
+													<tbody><tr>
+														<td valign="top">
+															<table width="auto" border="0" align="center" cellpadding="0" cellspacing="0" style="border-radius: 24px; border:2px solid #ffffff;">
+																<tbody><tr>
+																	<td width="auto" align="center" valign="middle" height="43" style="font-size: 14px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-left: 25px; padding-right: 25px; word-break: break-word; background-clip: padding-box;">
+																		<span style="color: rgb(255, 255, 255); font-weight: normal; font-size: inherit; line-height: 24px;">
+																			<a href="#" style="color: rgb(255, 255, 255); font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																				LEARN MORE
+																			</a>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<!-- end button border -->
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!--end button-->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="80" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-2 HEADING TEXT / HEADER IMAGE -->
+			
+				
+				<!--START LAYOUT-3 ( 2-COL / 2-ROW / IMAGE ICON / TEXT )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #ffffff;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px; margin:0 auto;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr dup="0">
+								<td valign="top" align="center">
+									<!-- start col left -->
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td align="center" style="font-size: 30px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 30px;">
+													<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 30px; text-decoration: none;">Mailbuild Features</a>
+												</span>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="40" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- start content container-->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+										<tbody><tr>
+											<td valign="top">
+												<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+													<tbody><tr>
+														<td valign="top" align="center"><table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="col-2" dir="ltr">
+																<tbody><tr>
+																	<td valign="top">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<tbody><tr>
+																				<td align="left" valign="top" width="35" style="padding-right:10px;">
+																					<table width="35" align="left" border="0" cellpadding="0" cellspacing="0">
+																						<tbody><tr>
+																							<td align="left" valign="top">
+																								<a href="#" style="font-size: inherit; text-decoration: none;">
+																									<img src="images/icon-email.png" width="35" style="max-width: 35px; display: block !important;" alt="icon-email">
+																								</a>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																				<td align="left" style="font-size: 20px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: normal; font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Best email</a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr>
+																	<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur.
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<!-- start button arrow -->
+																<tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+																			<tbody><tr>
+																				<td valign="middle">
+																					<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																						<tbody><tr>
+																							<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-right: 8px; word-break: break-word;">
+																								<a href="#" style="color: #0099CC; font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																									Read More
+																								</a>
+																							</td>
+																							<td valign="middle" align="left" width="15">
+																								<img src="images/btn-arrow.png" width="15" style="max-width:15px; display: block !important;" alt="btn-arrow-white" border="0" hspace="0" vspace="0">
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																<!-- end button arrow -->
+															</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+																<tbody><tr>
+																	<td height="1" width="20" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+															</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="280" align="right" border="0" cellpadding="0" cellspacing="0" class="col-2" dir="ltr">
+																<tbody><tr>
+																	<td valign="top">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<tbody><tr>
+																				<td align="left" valign="top" width="30" style="padding-right:10px;">
+																					<table width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+																						<tbody><tr>
+																							<td align="left" valign="top">
+																								<a href="#" style="font-size: inherit; text-decoration: none;">
+																									<img src="images/icon-like.png" width="30" style="max-width: 30px; display: block !important;" alt="icon-like">
+																								</a>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																				<td align="left" style="font-size: 20px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: normal; font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Good support</a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr>
+																	<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur.
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<!-- start button arrow -->
+																<tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+																			<tbody><tr>
+																				<td valign="middle">
+																					<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																						<tbody><tr>
+																							<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-right: 8px; word-break: break-word;">
+																								<a href="#" style="color: #0099CC; font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																									Read More
+																								</a>
+																							</td>
+																							<td valign="middle" align="left" width="15">
+																								<img src="images/btn-arrow.png" width="15" style="max-width:15px; display: block !important;" alt="btn-arrow-white" border="0" hspace="0" vspace="0">
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																<!-- end button arrow -->
+															</tbody></table></td>
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+							<!-- start content container-->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+										<tbody><tr>
+											<td valign="top">
+												<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+													<tbody><tr>
+														<td valign="top" align="center"><table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="col-2" dir="ltr">
+																<tbody><tr>
+																	<td valign="top">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<tbody><tr>
+																				<td align="left" valign="top" width="35" style="padding-right:10px;">
+																					<table width="35" align="left" border="0" cellpadding="0" cellspacing="0">
+																						<tbody><tr>
+																							<td align="left" valign="top">
+																								<a href="#" style="font-size: inherit; text-decoration: none;">
+																									<img src="images/icon-bright.png" width="35" style="max-width: 35px; display: block !important;" alt="icon-bright">
+																								</a>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																				<td align="left" style="font-size: 20px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: normal; font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Clean Design</a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr>
+																	<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur.
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<!-- start button arrow -->
+																<tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+																			<tbody><tr>
+																				<td valign="middle">
+																					<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																						<tbody><tr>
+																							<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-right: 8px; word-break: break-word;">
+																								<a href="#" style="color: #0099CC; font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																									Read More
+																								</a>
+																							</td>
+																							<td valign="middle" align="left" width="15">
+																								<img src="images/btn-arrow.png" width="15" style="max-width:15px; display: block !important;" alt="btn-arrow-white" border="0" hspace="0" vspace="0">
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																<!-- end button arrow -->
+															</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+																<tbody><tr>
+																	<td height="1" width="20" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+															</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="280" align="right" border="0" cellpadding="0" cellspacing="0" class="col-2" dir="ltr">
+																<tbody><tr>
+																	<td valign="top">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<tbody><tr>
+																				<td align="left" valign="top" width="30" style="padding-right:10px;">
+																					<table width="30" align="left" border="0" cellpadding="0" cellspacing="0">
+																						<tbody><tr>
+																							<td align="left" valign="top">
+																								<a href="#" style="font-size: inherit; text-decoration: none;">
+																									<img src="images/icon-tick.png" width="30" style="max-width: 30px; display: block !important;" alt="icon-tick">
+																								</a>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																				<td align="left" style="font-size: 20px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: normal; font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Best Choose</a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="26" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr>
+																	<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur.
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<!-- start button arrow -->
+																<tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+																			<tbody><tr>
+																				<td valign="middle">
+																					<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																						<tbody><tr>
+																							<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-right: 8px; word-break: break-word;">
+																								<a href="#" style="color: #0099CC; font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																									Read More
+																								</a>
+																							</td>
+																							<td valign="middle" align="left" width="15">
+																								<img src="images/btn-arrow.png" width="15" style="max-width:15px; display: block !important;" alt="btn-arrow-white" border="0" hspace="0" vspace="0">
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																<!-- end button arrow -->
+															</tbody></table></td>
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-3 ( 2-COL / 2-ROW / IMAGE ICON / TEXT )   -->
+			
+				<!--START LAYOUT-4 ( TEXT TITLE )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#DEE5E9; min-width:600px; margin:0 auto;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr dup="0">
+								<td valign="top" align="center">
+									
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td align="center" style="font-size: 30px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 30px;">
+													<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 30px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: none; line-height: 30px;">Ferio&nbsp;</span>Responsive Email</a>
+												</span>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+										<tr dup="0">
+											<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+													Clean design templates
+												</span>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+			
+				<!--START LAYOUT-5 ( 2-COL IMAGE / TEXT )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="background-color:#DEE5E9; min-width:600px; margin:0 auto;">
+							<!-- start content container-->
+							<tbody><tr dup="0">
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td valign="top" align="center"><table width="287" align="left" border="0" cellpadding="0" cellspacing="0" class="col-2" style="background-color:#ffffff; padding:5px;" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image1.jpg" width="277" style="max-width: 277px; display: block !important;" alt="image1">
+															</a>
+														</td>
+													</tr>
+													
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr>
+																	<td valign="top" style="padding:8px;">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			
+																			
+																			<!-- start space -->
+																			<tbody><tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<tr dup="0">
+																				<td align="center" style="font-size: 24px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">GREAT</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<tr dup="0">
+																				<td align="center" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: #0099CC; font-size: inherit; line-height: 24px;">
+																						Email Templates
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			
+																			<tr dup="0">
+																				<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur.
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<!-- start button arrow -->
+																			<tr dup="0">
+																				<td valign="top">
+																					<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+																						<tbody><tr>
+																							<td valign="middle" align="left">
+																								<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																									<tbody><tr>
+																										<td valign="middle" align="left" width="15">
+																											<img src="images/icon-heart.png" width="15" style="max-width:15px; display: block !important;" alt="icon-heart" border="0" hspace="0" vspace="0">
+																										</td>
+																										<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: rgb(85, 85, 85); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; padding-left: 8px; word-break: break-word;">
+																											<a href="#" style="color: rgb(85, 85, 85); font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																												3,566 Like
+																											</a>
+																										</td>
+																									</tr>
+																								</tbody></table>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																			<!-- end button arrow -->
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="26" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:26px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="26" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="287" align="right" border="0" cellpadding="0" cellspacing="0" class="col-2" style="background-color:#ffffff; padding:5px;" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image2.jpg" width="277" style="max-width: 277px; display: block !important;" alt="image2">
+															</a>
+														</td>
+													</tr>
+													
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr>
+																	<td valign="top" style="padding:8px;">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<!-- start space -->
+																			<tbody><tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<tr dup="0">
+																				<td align="center" style="font-size: 24px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">AWESOME</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<tr dup="0">
+																				<td align="center" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: #0099CC; font-size: inherit; line-height: 24px;">
+																						Email Templates
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			
+																			<tr dup="0">
+																				<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet consectetur adipiscing elit amet consectetur.
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<!-- start button arrow -->
+																			<tr dup="0">
+																				<td valign="top">
+																					<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+																						<tbody><tr>
+																							<td valign="middle" align="left">
+																								<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																									<tbody><tr>
+																										<td valign="middle" align="left" width="15">
+																											<img src="images/icon-heart.png" width="15" style="max-width:15px; display: block !important;" alt="icon-heart" border="0" hspace="0" vspace="0">
+																										</td>
+																										<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: rgb(85, 85, 85); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; padding-left: 8px; word-break: break-word;">
+																											<a href="#" style="color: rgb(85, 85, 85); font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																												1,542 Like
+																											</a>
+																										</td>
+																									</tr>
+																								</tbody></table>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																			<!-- end button arrow -->
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-5 ( 2-COL IMAGE / TEXT )   -->
+			
+				<!-- START LAYOUT-6 (2-COL IMAGE-LEFT / TEXT-RIGHT ) -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td valign="top">
+									<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; margin:0 auto; background-color:#ffffff;">
+										<tbody><tr dup="0">
+											<td align="center" valign="top" style="padding:5px;"><table width="285" align="left" border="0" cellspacing="0" cellpadding="0" class="full-width" dir="ltr">
+													<tbody><tr dup="0">
+														<td valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image3.jpg" width="285" style="max-width: 285px; display: block !important;" alt="image3.jpg" border="0" hspace="0" vspace="0">
+															</a>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="remove-640" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="25" class="h-20" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="280" align="right" border="0" cellspacing="0" cellpadding="0" class="full-width" dir="ltr">
+													
+													<tbody><tr dup="0">
+														<td valign="top" style="padding:10px;">
+															<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0" class="full-width">
+																<!-- start space -->
+																<tbody><tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<tr dup="0">
+																	<td align="center" style="font-size: 30px; line-height: 30px; color: rgb(51, 51, 51); font-weight: 500; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="color: rgb(51, 51, 51); font-size: inherit; line-height: 30px;">ENJOY<br style="line-height: 30px;">PRODUCTS</span>
+																	</td>
+																</tr>
+																
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="8" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; color: #0099CC; font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="color: #0099CC; font-size: inherit; line-height: 24px;">New email : 2015-06-23</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		Lorem ipsum dolor sit amet, consectetur orem ipsum dolor sit amet, consectetur.
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<!-- start button arrow -->
+																<tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+																			<tbody><tr>
+																				<td valign="middle">
+																					<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																						<tbody><tr>
+																							<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-right: 8px; word-break: break-word;">
+																								<a href="#" style="color: #0099CC; font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																									Read More
+																								</a>
+																							</td>
+																							<td valign="middle" align="left" width="15">
+																								<img src="images/btn-arrow.png" width="15" style="max-width:15px; display: block !important;" alt="btn-arrow-white" border="0" hspace="0" vspace="0">
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-6 (2-COL IMAGE-LEFT / TEXT-RIGHT ) -->
+			
+				<!-- START LAYOUT-7 (2-COL IMAGE-RIGHT / TEXT-LEFT ) -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td valign="top">
+									<table width="600" dir="rtl" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="background-color:#ffffff; min-width:600px; margin:0 auto; ">
+										<tbody><tr dup="0">
+											<td align="center" valign="top" style="padding:5px;"><table width="285" align="right" border="0" cellspacing="0" cellpadding="0" class="full-width" dir="ltr">
+													<tbody><tr dup="0">
+														<td valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image4.jpg" width="285" style="max-width: 285px; display: block !important;" alt="image4.jpg" border="0" hspace="0" vspace="0">
+															</a>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="25" border="0" cellpadding="0" cellspacing="0" align="right" class="remove-640" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="25" class="h-20" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="280" dir="ltr" align="left" border="0" cellspacing="0" cellpadding="0" class="full-width">
+													
+													<tbody><tr dup="0">
+														<td valign="top" style="padding:10px;">
+															<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0" class="full-width">
+																<!-- start space -->
+																<tbody><tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<tr dup="0">
+																	<td align="center" style="font-size: 30px; line-height: 30px; color: rgb(51, 51, 51); font-weight: 500; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="color: rgb(51, 51, 51); font-size: inherit; line-height: 30px;">ENJOY<br style="line-height: 30px;">BUSINESS</span>
+																	</td>
+																</tr>
+																
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="8" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; color: #0099CC; font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="color: #0099CC; font-size: inherit; line-height: 24px;">New email : 2015-06-23</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		Lorem ipsum dolor sit amet, consectetur orem ipsum dolor sit amet, consectetur.
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<!-- start button arrow -->
+																<tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+																			<tbody><tr>
+																				<td valign="middle">
+																					<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																						<tbody><tr>
+																							<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-right: 8px; word-break: break-word;">
+																								<a href="#" style="color: #0099CC; font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																									Read More
+																								</a>
+																							</td>
+																							<td valign="middle" align="left" width="15">
+																								<img src="images/btn-arrow.png" width="15" style="max-width:15px; display: block !important;" alt="btn-arrow-white" border="0" hspace="0" vspace="0">
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+															</tbody></table>
+														</td>
+													</tr>
+													
+												</tbody></table></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-7 (2-COL IMAGE-RIGHT / TEXT-LEFT ) -->
+			
+				<!--START LAYOUT-8 ( 3-COL IMAGE / TEXT )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="background-color:#DEE5E9; min-width:600px; margin:0 auto;">
+							<!-- start content container-->
+							<tbody><tr>
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td valign="top" align="center"><table width="180" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3" style="background-color:#ffffff; padding:5px;" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image5.jpg" width="170" style="max-width: 170px; display: block !important;" alt="image5">
+															</a>
+														</td>
+													</tr>
+													
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr>
+																	<td valign="top" style="padding:8px;">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			
+																			
+																			<!-- start space -->
+																			<tbody><tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<tr dup="0">
+																				<td align="center" style="font-size: 20px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: #0099CC; font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;">Article-1</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			
+																			<tr dup="0">
+																				<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet consectetur
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<!-- start button arrow -->
+																			<tr dup="0">
+																				<td valign="top">
+																					<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+																						<tbody><tr>
+																							<td valign="middle" align="center">
+																								<table width="auto" align="center" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																									<tbody><tr>
+																										<td align="center" valign="middle" style="padding:5px;">
+																											<a href="#" style="font-size: inherit; text-decoration: none;">
+																												<img src="images/icon-facebook-circle.png" width="20" alt="icon-facebook-circle" style="max-width: 20px; display: block !important;">
+																											</a>
+																										</td>
+																										<td align="center" valign="middle" style="padding:5px;">
+																											<a href="#" style="font-size: inherit; text-decoration: none;">
+																												<img src="images/icon-twitter-circle.png" width="20" alt="icon-twitter-circle" style="max-width: 20px; display: block !important;">
+																											</a>
+																										</td>
+																									</tr>
+																								</tbody></table>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																			<!-- end button arrow -->
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="30" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:30px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="30" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="180" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3" style="background-color:#ffffff; padding:5px;" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image6.jpg" width="170" style="max-width: 170px; display: block !important;" alt="image6">
+															</a>
+														</td>
+													</tr>
+													
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr>
+																	<td valign="top" style="padding:8px;">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<!-- start space -->
+																			<tbody><tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<tr dup="0">
+																				<td align="center" style="font-size: 20px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: #0099CC; font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;">Article-2</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			
+																			<tr dup="0">
+																				<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet consectetur
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<!-- start button arrow -->
+																			<tr dup="0">
+																				<td valign="top">
+																					<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+																						<tbody><tr>
+																							<td valign="middle" align="center">
+																								<table width="auto" align="center" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																									<tbody><tr>
+																										<td align="center" valign="middle" style="padding:5px;">
+																											<a href="#" style="font-size: inherit; text-decoration: none;">
+																												<img src="images/icon-facebook-circle.png" width="20" alt="icon-facebook-circle" style="max-width: 20px; display: block !important;">
+																											</a>
+																										</td>
+																										<td align="center" valign="middle" style="padding:5px;">
+																											<a href="#" style="font-size: inherit; text-decoration: none;">
+																												<img src="images/icon-twitter-circle.png" width="20" alt="icon-twitter-circle" style="max-width: 20px; display: block !important;">
+																											</a>
+																										</td>
+																									</tr>
+																								</tbody></table>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																			<!-- end button arrow -->
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="30" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:30px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="30" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="180" align="right" border="0" cellpadding="0" cellspacing="0" class="col-3" style="background-color:#ffffff; padding:5px;" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image7.jpg" width="170" style="max-width: 170px; display: block !important;" alt="image7">
+															</a>
+														</td>
+													</tr>
+													
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr>
+																	<td valign="top" style="padding:8px;">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<!-- start space -->
+																			<tbody><tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<tr dup="0">
+																				<td align="center" style="font-size: 20px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: #0099CC; font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;">Article-3</a>
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			
+																			<tr dup="0">
+																				<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet consectetur
+																					</span>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																			<!-- start button arrow -->
+																			<tr dup="0">
+																				<td valign="top">
+																					<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+																						<tbody><tr>
+																							<td valign="middle" align="center">
+																								<table width="auto" align="center" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																									<tbody><tr>
+																										<td align="center" valign="middle" style="padding:5px;">
+																											<a href="#" style="font-size: inherit; text-decoration: none;">
+																												<img src="images/icon-facebook-circle.png" width="20" alt="icon-facebook-circle" style="max-width: 20px; display: block !important;">
+																											</a>
+																										</td>
+																										<td align="center" valign="middle" style="padding:5px;">
+																											<a href="#" style="font-size: inherit; text-decoration: none;">
+																												<img src="images/icon-twitter-circle.png" width="20" alt="icon-twitter-circle" style="max-width: 20px; display: block !important;">
+																											</a>
+																										</td>
+																									</tr>
+																								</tbody></table>
+																							</td>
+																						</tr>
+																					</tbody></table>
+																				</td>
+																			</tr>
+																			<!-- end button arrow -->
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-8 ( 3-COL IMAGE / TEXT )   -->
+			
+				<!--START LAYOUT-9 ( SPACE ) -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width: 600px; background-color: #DEE5E9; margin:0 auto;">
+							<tbody><tr>
+								<td valign="top" class="image-full-width">
+									<img src="images/space.png" width="600" alt="space" style="max-width: 600px; display: block;">
+								</td>
+							</tr>
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-9 ( SPACE ) -->
+			
+				<!-- START LAYOUT-10 ( BG IMAGE / TEXT CENTER ) -->
+				<tr>
+					<td valign="top" align="center" style="background-image: url(images/bg-image2.jpg); background-color: rgb(63, 86, 112); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat !important;" class="container">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width:600px; margin:0 auto;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr dup="0">
+								<td valign="top" align="center">
+									<!-- start col left -->
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td align="center" style="font-size: 30px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												<span style="text-decoration: none; color: rgb(255, 255, 255); font-size: inherit; line-height: 30px;">
+													<a href="#" style="color: rgb(255, 255, 255); font-size: inherit; line-height: 30px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: none; line-height: 30px;">Ferio&nbsp;</span>Responsive Email</a>
+												</span>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+										<tr dup="0">
+											<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												<span style="text-decoration: none; color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">
+													Clean design templates
+												</span>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- start image -->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+										<tbody><tr>
+											<td align="center" valign="top" class="image-full-width">
+												<a href="#" style="font-size: inherit; text-decoration: none;">
+													<img src="images/image8.png" width="600" style="max-width: 600px; display: block !important;" alt="image8" border="0" hspace="0" vspace="0">
+												</a>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end image -->
+							<!-- start content -->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width">
+										<tbody><tr>
+											<td valign="top">
+												<table width="100%" align="center" wborder="0" cellspacing="0" cellpadding="0">
+													<tbody><tr>
+														<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo iaculis lectus feugiat faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+												</tbody></table>
+											</td>
+										</tr>
+										<!-- start button -->
+										<tr>
+											<td valign="top">
+												<table width="auto" border="0" align="center" cellpadding="0" cellspacing="0" style="padding-top:5px; padding-bottom:5px; margin:0 auto;" class="auto-center-all">
+													<tbody><tr>
+														<td valign="top" style="padding:5px;" class="full-block-479" dup="0">
+															<table width="auto" align="center" border="0" cellpadding="0" cellspacing="0" style="border-radius: 24px; background-color: #002857;">
+																<tbody><tr>
+																	<td width="auto" align="center" valign="middle" height="42" style="font-size: 14px; font-family: Roboto, Arial, Helvetica, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: normal; padding-left: 25px; padding-right: 25px; word-break: break-word; background-clip: padding-box;">
+																		<span style="color: rgb(255, 255, 255); font-weight: normal; font-size: inherit; line-height: 24px;">
+																			<a href="#" style="color: rgb(255, 255, 255); font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																				READ MORE
+																			</a>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+														<td valign="top" style="padding:5px;" class="full-block-479" dup="0">
+															<table width="auto" align="center" border="0" cellpadding="0" cellspacing="0" style="border-radius: 24px; border:1px solid #ffffff;">
+																<tbody><tr>
+																	<td width="auto" align="center" valign="middle" height="42" style="font-size: 14px; font-family: Roboto, Arial, Helvetica, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: normal; padding-left: 25px; padding-right: 25px; word-break: break-word; background-clip: padding-box;">
+																		<span style="color: rgb(255, 255, 255); font-weight: normal; font-size: inherit; line-height: 24px;">
+																			<a href="#" style="color: rgb(255, 255, 255); font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																				JOIN NOW
+																			</a>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+										<!-- end button -->
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content -->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-10 ( BIG IMAGE / TEXT CENTER ) -->
+			
+				<!-- START LAYOUT-11 ( TITLE TEXT CENTER / BUTTON ) -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #ffffff;">
+						
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width:600px; margin:0 auto;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start border top  -->
+							<tr>
+								<td valign="top" width="100%" height="3" style="background-color:#68a29f;">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td valign="top" width="100%" height="3" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end border top -->
+							<tr>
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<!-- start border left  -->
+											<td valign="top" width="3" height="100%" style="background-color:#68a29f;">
+												<table width="3" align="center" border="0" cellpadding="0" cellspacing="0" style="min-width:3px !important; max-width:3px !important; ">
+													<tbody><tr>
+														<td valign="top" width="3" height="100%" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<!-- end border left -->
+											<td valign="top">
+												<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" style="background-image: url(images/bg-image3.jpg); background-color: rgb(104, 162, 159); background-size: cover; background-position: 50% 0%; background-repeat: no-repeat !important;">
+													<!-- start space -->
+													<tbody><tr>
+														<td valign="top" height="40" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr dup="0">
+														<td align="center" style="font-size: 30px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+															<span style="color: rgb(255, 255, 255); font-size: 30px; line-height: 30px;">Sale over 1,000 item </span>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr dup="0">
+														<td align="center" style="font-size: 14px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+															<span style="color: rgb(255, 255, 255); font-size: 14px; line-height: 24px;">
+																Clean design templates
+															</span>
+														</td>
+													</tr>
+													<!-- start space -->
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<!-- start button -->
+													<tr>
+														<td valign="top">
+															<table width="auto" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;" class="auto-center-all">
+																<tbody><tr>
+																	<td valign="top" style="padding:5px;" class="full-block-479" dup="0">
+																		<table width="auto" align="left" border="0" cellpadding="0" cellspacing="0" style="background-color:#002857; border-radius: 24px; border:1px solid #ffffff;">
+																			<tbody><tr>
+																				<td width="auto" align="center" valign="middle" height="42" style="font-size: 14px; font-family: Roboto, Arial, Helvetica, sans-serif; text-align: center; color: rgb(255, 255, 255); font-weight: normal; padding-left: 25px; padding-right: 25px; word-break: break-word; background-clip: padding-box;">
+																					<span style="color: rgb(255, 255, 255); font-weight: normal; font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: rgb(255, 255, 255); font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																							JOIN NOW
+																						</a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+													<!-- end button -->
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="40" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+												</tbody></table>
+											</td>
+											<!-- start border right  -->
+											<td valign="top" width="3" height="100%" style="background-color:#68a29f;">
+												<table width="3" align="center" border="0" cellpadding="0" cellspacing="0" style="min-width:3px !important; max-width:3px !important; ">
+													<tbody><tr>
+														<td valign="top" width="3" height="100%" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<!-- end border right -->
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- start border bottom  -->
+							<tr>
+								<td valign="top" width="100%" height="3" style="background-color:#68a29f;">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td valign="top" width="100%" height="3" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end border bottom -->
+							
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+						
+					</td>
+				</tr>
+				<!-- END LAYOUT-11 ( TITLE TEXT CENTER / BUTTON ) -->
+			
+				<!-- START  LAYOUT-12 ( MOUNTAIN DIVIDER ) -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="min-width: 600px; margin: 0px auto; background-color: rgb(243, 245, 249);">
+							
+							<!-- start image -->
+							<tbody><tr>
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+										<tbody><tr>
+											<td align="center" valign="top" class="image-full-width">
+												<a href="#" style="font-size: inherit; text-decoration: none;">
+													<img src="images/mountain.png" width="600" style="max-width: 600px; display: block !important;" alt="mountain" border="0" hspace="0" vspace="0">
+												</a>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end image -->
+							
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-12 ( MOUNTAIN DIVIDER ) -->
+			
+				<!-- START LAYOUT-13 ( TEXT TITLE ) -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color:#DEE5E9;">
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#DEE5E9; min-width:600px; margin:0 auto;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr>
+								<td valign="top" align="center">
+									<!-- start col left -->
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr dup="0">
+											<td align="center" style="font-size: 30px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 30px;">
+													<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 30px; text-decoration: none;">Our template</a>
+												</span>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+										<tr dup="0">
+											<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo iaculis lectus feugiat faucibus. Curabitur aliquet,
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<!-- END LAYOUT-13 ( TEXT TITLE ) -->
+			
+				<!--START LAYOUT-14 ( 2-COL IMAGE / TEXT )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="background-color:#DEE5E9; min-width:600px; margin:0 auto;">
+							<!-- start content container-->
+							<tbody><tr>
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td valign="top" align="center"><table width="285" align="left" border="0" cellpadding="0" cellspacing="0" class="col-2" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image9.jpg" width="285" style="max-width: 285px; display: block !important;" alt="image9">
+															</a>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr>
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr dup="0">
+																	<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 24px;">
+																			<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Article-1</a>
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur adipiscing elit&nbsp;<a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="30" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:30px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="30" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="285" align="right" border="0" cellpadding="0" cellspacing="0" class="col-2" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image10.jpg" width="285" style="max-width: 285px; display: block !important;" alt="image10">
+															</a>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr>
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr dup="0">
+																	<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 24px;">
+																			<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Article-2</a>
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur adipiscing elit&nbsp;<a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-14 ( 2-COL IMAGE / TEXT )   -->
+			
+				<!--START LAYOUT-15 ( 3-COL IMAGE / TEXT )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="background-color:#DEE5E9; min-width:600px;">
+							<!-- start content container-->
+							<tbody><tr>
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td valign="top" align="center"><table width="180" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image11.jpg" width="180" style="max-width: 180px; display: block !important;" alt="image11">
+															</a>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr>
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr dup="0">
+																	<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 24px;">
+																			<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Article-3</a>
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur&nbsp;<a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="30" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:30px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="30" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="180" align="left" border="0" cellpadding="0" cellspacing="0" class="col-3" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image12.jpg" width="180" style="max-width: 180px; display: block !important;" alt="image12">
+															</a>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr>
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr dup="0">
+																	<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 24px;">
+																			<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Article-4</a>
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur&nbsp;<a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="30" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:30px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="30" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="180" align="right" border="0" cellpadding="0" cellspacing="0" class="col-3" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top" class="image-full-width">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/image13.jpg" width="180" style="max-width: 180px; display: block !important;" alt="image13">
+															</a>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr>
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																<tbody><tr dup="0">
+																	<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 24px;">
+																			<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 24px; text-decoration: none;">Article-5</a>
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																
+																<tr dup="0">
+																	<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet consectetur&nbsp;<a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-15 ( 3-COL IMAGE / TEXT )   -->
+			
+				<!--START LAYOUT-16 ( SPACE ) -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="min-width: 600px; background-color: #DEE5E9; margin:0 auto;">
+							<tbody><tr>
+								<td valign="top" class="image-full-width">
+									<img src="images/space.png" width="600" alt="space" style="max-width: 600px; display: block !important;">
+								</td>
+							</tr>
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-16 ( SPACE ) -->
+			
+				<!--START LAYOUT-17 ( 3-COL GALLERY )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #ffffff;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width" style="background-color:#ffffff; min-width:600px; margin:0 auto;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr dup="0">
+								<td valign="top" align="center">
+									<!-- start col left -->
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td align="center" style="font-size: 30px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 30px;">
+													<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 30px; text-decoration: none;">Our gallery</a>
+												</span>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+										<tr dup="0">
+											<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(136, 136, 136); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo iaculis lectus feugiat faucibus. Curabitur aliquet,
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="25" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- start image divider-->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+										<tbody><tr>
+											<td align="center" valign="top">
+												<a href="#" style="font-size: inherit; text-decoration: none;">
+													<img src="images/icon-divider.png" width="246" style="max-width:246px; display: block !important; " alt="icon-down-arrow" border="0" hspace="0" vspace="0">
+												</a>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end image divider-->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="40" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start content container-->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td valign="top" align="center"><table width="230" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width-center" dir="ltr">
+													<tbody><tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+																<tbody><tr>
+																	<td valign="top">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+																			<tbody><tr>
+																				<td align="center" valign="top" class="image-full-width">
+																					<a href="#" style="font-size: inherit; text-decoration: none;">
+																						<img src="images/image14.jpg" width="230" style="max-width: 230px; display: block !important;" alt="image14">
+																					</a>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+																<tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<tbody><tr>
+																				<td valign="top">
+																					<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #002857; padding-left:15px; padding-right:15px;">
+																						<!-- start space -->
+																						<tbody><tr>
+																							<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																							</td>
+																						</tr>
+																						<!-- end space -->
+																						<tr>
+																							<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																								<span style="text-decoration: none; color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">
+																									NEVER ALONE
+																								</span>
+																							</td>
+																						</tr>
+																						<!-- start space -->
+																						<tr>
+																							<td valign="top" height="5" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																							</td>
+																						</tr>
+																						<!-- end space -->
+																						
+																						<tr>
+																							<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																								<span style="text-decoration: none; color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">
+																									Lorem ipsum dolor sit amet consectetur
+																								</span>
+																							</td>
+																						</tr>
+																						<!-- start space -->
+																						<tr>
+																							<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																							</td>
+																						</tr>
+																						<!-- end space -->
+																						
+																					</tbody></table>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="10" border="0" cellpadding="0" cellspacing="0" align="left" class="full-width" style="min-width:10px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="10" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="120" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width-center" dir="ltr">
+													<tbody><tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+																<tbody><tr>
+																	<td align="center" valign="top" class="image-full-width">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/image15.jpg" width="120" style="max-width: 120px; display: block !important;" alt="image15">
+																		</a>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+															</tbody></table>
+														</td>
+													</tr>
+													
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+																<tbody><tr>
+																	<td align="center" valign="top" class="image-full-width">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/image16.jpg" width="120" style="max-width: 120px; display: block !important;" alt="image16">
+																		</a>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+															</tbody></table>
+														</td>
+													</tr>
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+																<tbody><tr>
+																	<td align="center" valign="top" class="image-full-width">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/image17.jpg" width="120" style="max-width: 120px; display: block !important;" alt="image17">
+																		</a>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="10" class="h-10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+															</tbody></table>
+														</td>
+													</tr>
+													
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="10" border="0" cellpadding="0" cellspacing="0" align="left" class="full-width" style="min-width:10px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="10" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="230" align="right" border="0" cellpadding="0" cellspacing="0" class="full-width-center" dir="ltr">
+													<tbody><tr dup="0">
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+																<tbody><tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+																			<tbody><tr>
+																				<td valign="top">
+																					<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="background-color: #002857; padding-left:15px; padding-right:15px;">
+																						<!-- start space -->
+																						<tbody><tr>
+																							<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																							</td>
+																						</tr>
+																						<!-- end space -->
+																						<tr>
+																							<td align="center" style="font-size: 18px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																								<span style="text-decoration: none; color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">
+																									MY FRIENDS
+																								</span>
+																							</td>
+																						</tr>
+																						<!-- start space -->
+																						<tr>
+																							<td valign="top" height="5" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																							</td>
+																						</tr>
+																						<!-- end space -->
+																						
+																						<tr>
+																							<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																								<span style="text-decoration: none; color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">
+																									Lorem ipsum dolor sit amet consectetur
+																								</span>
+																							</td>
+																						</tr>
+																						<!-- start space -->
+																						<tr>
+																							<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																							</td>
+																						</tr>
+																						<!-- end space -->
+																						
+																					</tbody></table>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+																<tr dup="0">
+																	<td valign="top">
+																		<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+																			<tbody><tr>
+																				<td align="center" valign="top" class="image-full-width">
+																					<a href="#" style="font-size: inherit; text-decoration: none;">
+																						<img src="images/image18.jpg" width="230" style="max-width: 230px; display: block !important;" alt="image18">
+																					</a>
+																				</td>
+																			</tr>
+																			<!-- start space -->
+																			<tr>
+																				<td valign="top" height="10" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																			<!-- end space -->
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-17 ( 3-COL GALLERY )   -->
+			
+				
+				<!--START LAYOUT-18 ( CONTENT LIST )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #DEE5E9;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#DEE5E9; min-width:600px; margin:0 auto;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start content -->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width">
+										<tbody><tr>
+											<td align="left" valign="top" width="auto">
+												<table width="auto" border="0" cellspacing="0" cellpadding="0" align="left">
+													<tbody><tr valign="top">
+														<td align="left" valign="middle">
+															<img src="images/icon-number-1.png" width="60" style="max-width: 60px; display: block !important;" alt="icon-number-1" border="0" hspace="0" vspace="0">
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<!-- space width -->
+											<td valign="top">
+												<table width="25" border="0" cellpadding="0" cellspacing="0" align="left" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+													<tbody><tr>
+														<td height="1" width="25" class="h-20" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<!-- space width -->
+											
+											<td valign="top" align="left">
+												<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+													
+													<tbody><tr>
+														<td align="left" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;">
+															<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: normal; font-size: inherit; line-height: 24px;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																	Beautiful email template
+																</a>
+															</span>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr>
+														<td align="left" style="font-size: 14px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+															<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit; line-height: 24px;">
+																Lorem ipsum dolor sit amet, consetetur sadipscing dolor sit amet consetetur ipsum dolor sit
+															</span>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<!-- start button arrow -->
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+																<tbody><tr>
+																	<td valign="middle">
+																		<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																			<tbody><tr>
+																				<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-right: 8px; word-break: break-word;">
+																					<a href="#" style="color: #0099CC; font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																						Read More
+																					</a>
+																				</td>
+																				<td valign="middle" align="left" width="10">
+																					<img src="images/arrow.png" width="10" style="max-width:10px; display: block !important;" alt="arrow" border="0" hspace="0" vspace="0">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+													<!-- end button arrow -->
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+												</tbody></table>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content  -->
+							<!-- start content -->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width">
+										<tbody><tr>
+											<td align="left" valign="top" width="auto">
+												<table width="auto" border="0" cellspacing="0" cellpadding="0" align="left">
+													<tbody><tr valign="top">
+														<td align="left" valign="middle">
+															<img src="images/icon-number-2.png" width="60" style="max-width: 60px; display: block !important;" alt="icon-number-2" border="0" hspace="0" vspace="0">
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<!-- space width -->
+											<td valign="top">
+												<table width="25" border="0" cellpadding="0" cellspacing="0" align="left" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+													<tbody><tr>
+														<td height="1" width="25" class="h-20" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table>
+											</td>
+											<!-- space width -->
+											
+											<td valign="top" align="left">
+												<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+													
+													<tbody><tr>
+														<td align="left" style="font-size: 18px; line-height: 24px; color: rgb(51, 51, 51); font-weight: normal; text-align: left; font-family: Roboto, 'Open Sans', Arail, Tahoma, Helvetica, Arial, sans-serif; word-break: break-word;">
+															<span style="text-decoration: none; color: rgb(51, 51, 51); font-weight: normal; font-size: inherit; line-height: 24px;">
+																<a href="#" style="color: rgb(51, 51, 51); font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																	Great email builder
+																</a>
+															</span>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<tr>
+														<td align="left" style="font-size: 14px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+															<span style="text-decoration: none; color: rgb(136, 136, 136); font-weight: normal; font-size: inherit; line-height: 24px;">
+																Lorem ipsum dolor sit amet, consetetur sadipscing dolor sit amet consetetur ipsum dolor sit
+															</span>
+														</td>
+													</tr>
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+													<!-- start button arrow -->
+													<tr dup="0">
+														<td valign="top">
+															<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+																<tbody><tr>
+																	<td valign="middle">
+																		<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto;">
+																			<tbody><tr>
+																				<td width="auto" valign="middle" align="left" style="font-size: 14px; line-height: 24px; color: #0099CC; font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; padding-right: 8px; word-break: break-word;">
+																					<a href="#" style="color: #0099CC; font-weight: normal; font-size: inherit; line-height: 24px; text-decoration: none;">
+																						Read More
+																					</a>
+																				</td>
+																				<td valign="middle" align="left" width="10">
+																					<img src="images/arrow.png" width="10" style="max-width:10px; display: block !important;" alt="arrow" border="0" hspace="0" vspace="0">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+													<!-- end button arrow -->
+													<!-- start space -->
+													<tr>
+														<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+													<!-- end space -->
+												</tbody></table>
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content -->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-18 ( CONTENT LIST ) -->
+			
+				
+				<!-- START LAYOUT-19 ( 2-COL / 2 ROW / IMAGE-LEFT / TEXT-RIGHT ) -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #ffffff;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#ffffff; min-width:600px; margin:0 auto;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<tr dup="0">
+								<td valign="top" align="center">
+									<!-- start col left -->
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td align="center" style="font-size: 30px; color: rgb(51, 51, 51); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+												<span style="text-decoration: none; color: rgb(51, 51, 51); font-size: inherit; line-height: 30px;">
+													<a href="#" style="color: rgb(51, 51, 51); font-size: inherit; line-height: 30px; text-decoration: none;">Mailbuild Features</a>
+												</span>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="40" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- start content container-->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+										<tbody><tr>
+											<td valign="top" align="center"><table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width" dir="ltr">
+													<tbody><tr>
+														<td valign="top">
+															<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width">
+																<tbody><tr>
+																	<td align="left" valign="top" width="130">
+																		<table width="130" border="0" cellspacing="0" cellpadding="0" align="left">
+																			<tbody><tr valign="top">
+																				<td align="left" valign="middle">
+																					<img src="images/image19.jpg" width="130" style="max-width: 130px; display: block !important;" alt="image19" border="0" hspace="0" vspace="0">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																	<!-- space width 20px -->
+																	<td valign="top">
+																		<table width="20" border="0" cellpadding="0" cellspacing="0" align="left" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+																			<tbody><tr>
+																				<td height="1" width="20" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																	<!-- space width 20px -->
+																	
+																	<td valign="middle" align="left">
+																		<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+																			<tbody><tr dup="0">
+																				<td align="left" style="font-size: 14px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet, consetetur&nbsp;<br style="line-height: 24px;"><a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="20" class="h-30" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width" dir="ltr">
+													<tbody><tr>
+														<td valign="top">
+															<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width">
+																<tbody><tr>
+																	<td align="left" valign="top" width="130">
+																		<table width="130" border="0" cellspacing="0" cellpadding="0" align="left">
+																			<tbody><tr valign="top">
+																				<td align="left" valign="middle">
+																					<img src="images/image20.jpg" width="130" style="max-width: 130px; display: block !important;" alt="image20" border="0" hspace="0" vspace="0">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																	<!-- space width 20px -->
+																	<td valign="top">
+																		<table width="20" border="0" cellpadding="0" cellspacing="0" align="left" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+																			<tbody><tr>
+																				<td height="1" width="20" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																	<!-- space width 20px -->
+																	
+																	<td valign="middle" align="left">
+																		<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+																			<tbody><tr dup="0">
+																				<td align="left" style="font-size: 14px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet, consetetur&nbsp;<br style="line-height: 24px;"><a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+							<!-- start content container-->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+										<tbody><tr>
+											<td valign="top" align="center"><table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width" dir="ltr">
+													<tbody><tr>
+														<td valign="top">
+															<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width">
+																<tbody><tr>
+																	<td align="left" valign="top" width="130">
+																		<table width="130" border="0" cellspacing="0" cellpadding="0" align="left">
+																			<tbody><tr valign="top">
+																				<td align="left" valign="middle">
+																					<img src="images/image21.jpg" width="130" style="max-width: 130px; display: block !important;" alt="image21" border="0" hspace="0" vspace="0">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																	<!-- space width 20px -->
+																	<td valign="top">
+																		<table width="20" border="0" cellpadding="0" cellspacing="0" align="left" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+																			<tbody><tr>
+																				<td height="1" width="20" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																	<!-- space width 20px -->
+																	
+																	<td valign="middle" align="left">
+																		<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+																			<tbody><tr dup="0">
+																				<td align="left" style="font-size: 14px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet, consetetur&nbsp;<br style="line-height: 24px;"><a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-20" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" width="20" class="h-30" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="full-width" dir="ltr">
+													<tbody><tr>
+														<td valign="top">
+															<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left" class="full-width">
+																<tbody><tr>
+																	<td align="left" valign="top" width="130">
+																		<table width="130" border="0" cellspacing="0" cellpadding="0" align="left">
+																			<tbody><tr valign="top">
+																				<td align="left" valign="middle">
+																					<img src="images/image22.jpg" width="130" style="max-width: 130px; display: block !important;" alt="image22" border="0" hspace="0" vspace="0">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																	<!-- space width 20px -->
+																	<td valign="top">
+																		<table width="20" border="0" cellpadding="0" cellspacing="0" align="left" style="min-width:20px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;">
+																			<tbody><tr>
+																				<td height="1" width="20" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																	<!-- space width 20px -->
+																	
+																	<td valign="middle" align="left">
+																		<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+																			<tbody><tr dup="0">
+																				<td align="left" style="font-size: 14px; color: rgb(136, 136, 136); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="text-decoration: none; color: rgb(136, 136, 136); font-size: inherit; line-height: 24px;">
+																						Lorem ipsum dolor sit amet, consetetur&nbsp;<br style="line-height: 24px;"><a href="#" style="color: #0099CC; font-size: inherit; line-height: 24px; text-decoration: none;"><span style="color: #0099CC; font-size: inherit; text-decoration: underline; line-height: 24px;">Read more</span></a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!--END LAYOUT-19 ( 2-COL / 2 ROW / IMAGE-LEFT / TEXT-RIGHT )   -->
+			
+				<!-- START LAYOUT-20 LOGO FOOTER AND SOCIAL -->
+				<tr>
+					<td valign="top" align="center" style="background-color:#444444;" class="container">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#444444; min-width:600px; margin:0 auto;" class="container">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start content container -->
+							<tr>
+								<td valign="top" align="center">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+										
+										<tbody><tr>
+											<td valign="middle"><table align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td align="center" valign="top">
+															<a href="#" style="font-size: inherit; text-decoration: none;">
+																<img src="images/logo-footer.png" width="98" style="max-width:240px; display: block !important; " alt="logo-footer" border="0" hspace="0" vspace="0">
+															</a>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="full-width" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" class="h-30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table align="right" border="0" cellpadding="0" cellspacing="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td valign="middle">
+															<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+																<tbody><tr>
+																	<td align="center" valign="middle" style="padding:3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-facebook-footer.png" width="25" alt="icon-facebook-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding:3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-twitter-footer.png" width="25" alt="icon-twitter-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding:3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-googleplus-footer.png" width="25" alt="icon-googleplus-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding:3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-rss-footer.png" width="25" alt="icon-rss-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding: 3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-youtube-footer.png" width="25" alt="icon-youtube-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding: 3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-vimeo-footer.png" width="25" alt="icon-vimeo-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding:3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-pinterest-footer.png" width="25" alt="icon-pinterest-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding:3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-linkedin-footer.png" width="25" alt="icon-linkedin-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																	<td align="center" valign="middle" style="padding:3px;">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/icon-instagram-footer.png" width="25" alt="icon-instagram-footer" style="max-width: 25px; display: block !important;">
+																		</a>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container -->
+							
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="30" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="1">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+										<tbody><tr>
+											<td valign="top" height="1" style="font-size: 0px; line-height: 0; border-collapse: collapse; background-color: rgb(85, 85, 85);">
+											</td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-20 LOGO FOOTER AND SOCIAL-->
+			
+				<!--START LAYOUT-21 ( CONTACT US / ABOUT US )  -->
+				<tr>
+					<td align="center" valign="top" class="container" style="background-color: #444444;">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color:#444444; min-width:600px;">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start content container-->
+							<tr dup="0">
+								<td valign="top">
+									<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+										<tbody><tr>
+											<td valign="top">
+												<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+													
+													<tbody><tr>
+														<td valign="top" align="center"><table width="280" align="left" border="0" cellpadding="0" cellspacing="0" class="col-2" dir="ltr">
+																<tbody><tr dup="0">
+																	<td align="left" style="font-size: 20px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">CONTACT US
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<tr dup="0">
+																	<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(165, 165, 165); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(165, 165, 165); font-size: inherit; line-height: 24px;">
+																			Company Name 1234 Street<br style="line-height: 24px;">
+																			Stage Post 1234<br style="line-height: 24px;">
+																			<span style="text-decoration: none; color: rgb(165, 165, 165); font-size: inherit; line-height: 24px;">Mail&nbsp;&nbsp;:&nbsp;&nbsp;<a href="#" style="color: #0099CC; font-size: 14px; line-height: 24px; text-decoration: none;">info@youemail.com</a></span><br style="line-height: 24px;">
+																			<span style="text-decoration: none; color: rgb(165, 165, 165); font-size: inherit; line-height: 24px;">Call Us&nbsp;&nbsp;:&nbsp;&nbsp;<a href="#" style="color: #0099CC; font-size: 14px; line-height: 24px; text-decoration: none;">001-1234-5678</a></span>
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="25" border="0" cellpadding="0" cellspacing="0" align="left" class="space-w-25" style="min-width:25px; height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+																<tbody><tr>
+																	<td height="1" width="25" class="h-40" style="display: block; font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+															</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="280" align="right" border="0" cellpadding="0" cellspacing="0" class="col-2" dir="ltr">
+																<tbody><tr dup="0">
+																	<td align="left" style="font-size: 20px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">ABOUNT US
+																		</span>
+																	</td>
+																</tr>
+																<!-- start space -->
+																<tr>
+																	<td valign="top" height="15" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+																	</td>
+																</tr>
+																<!-- end space -->
+																<tr dup="0">
+																	<td align="left" style="font-size: 14px; line-height: 24px; color: rgb(165, 165, 165); font-weight: normal; text-align: left; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																		<span style="text-decoration: none; color: rgb(165, 165, 165); font-size: inherit; line-height: 24px;">
+																			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a justo iaculis lectus feugiat faucibus. Curabitur aliquet, diam vel fringilla onsectetur adipiscing elit. dolor sit
+																		</span>
+																	</td>
+																</tr>
+															</tbody></table></td>
+													</tr>
+												</tbody></table>
+											</td>
+										</tr>
+										<!-- start space -->
+										<tr>
+											<td valign="top" height="50" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+											</td>
+										</tr>
+										<!-- end space -->
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container-->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-21 ( CONTACT US / ABOUT US ) -->
+			
+				<!-- START LAYOUT-22 ( FOOTER UNSUBSCRIBE ) -->
+				<tr>
+					<td valign="top" align="center" style="background-color:#002857;" class="container">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="background-color:#002857; min-width:600px; margin:0 auto;" class="container">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start content container -->
+							<tr>
+								<td valign="top" align="center">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+										
+										<tbody><tr>
+											<td valign="middle"><table align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+															<span style="color: rgb(255, 255, 255); font-size: 14px; text-decoration: none; line-height: 24px;">Copyright © 2015 Course . All rights reserved.</span>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="full-width" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" class="h-20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table align="right" border="0" cellpadding="0" cellspacing="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td align="center" style="font-size: 14px; line-height: 24px; color: rgb(255, 255, 255); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+															<span style="color: rgb(255, 255, 255); font-size: inherit; line-height: 24px;">
+																<a href="#" style="color: rgb(255, 255, 255); font-size: 14px; line-height: 24px; text-decoration: none;">Unsubscrib</a>
+															</span>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container -->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-22 ( FOOTER UNSUBSCRIBE ) -->
+			
+				<!-- START LAYOUT-1 VIEW ONLINE / LOGO / SOCIAL ICON -->
+				<tr>
+					<td valign="top" align="center" style="background-color:#ffffff;" class="container">
+						<!-- start container -->
+						<table width="600" align="center" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto; background-color:#ffffff; min-width:600px;" class="full-width">
+							<!-- start space -->
+							<tbody><tr>
+								<td valign="top" height="25" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+							<!-- start content container -->
+							<tr>
+								<td valign="middle">
+									<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0" class="full-width-center">
+										<tbody><tr>
+											<td valign="top"><table width="186" align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td valign="top">
+															<table width="auto" align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center">
+																<tbody><tr>
+																	<td valign="middle">
+																		<table align="center" border="0" cellspacing="0" cellpadding="0">
+																			<tbody><tr>
+																				<td valign="middle" style="padding-right:12px;">
+																					<img src="images/icon-viewonline.png" width="20" alt="icon-viewonline" style="max-width:20px; display:block !important; " border="0" hspace="0" vspace="0">
+																				</td>
+																				<td align="center" style="font-size: 14px; line-height: 30px; color: rgb(140, 140, 140); font-weight: normal; text-align: center; font-family: Roboto, Arial, Helvetica, sans-serif; word-break: break-word;">
+																					<span style="color: rgb(140, 140, 140); font-size: inherit; line-height: 24px;">
+																						<a href="#" style="color: rgb(140, 140, 140); font-size: 14px; line-height: 24px; text-decoration: none;">View online</a>
+																					</span>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="full-width" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" class="h-20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="186" align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td valign="top">
+															<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0" class="full-width-center">
+																<tbody><tr>
+																	<td align="center" valign="top">
+																		<a href="#" style="font-size: inherit; text-decoration: none;">
+																			<img src="images/logo-top.png" width="90" style="max-width:240px; display: block !important; " alt="logo-top" border="0" hspace="0" vspace="0" mc:edit="image-9">
+																		</a>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="20" border="0" cellpadding="0" cellspacing="0" align="left" class="full-width" style="height:1px; mso-table-lspace:0pt; mso-table-rspace:0pt; border-spacing:0;" dir="ltr">
+													<tbody><tr>
+														<td height="1" class="h-20" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+														</td>
+													</tr>
+												</tbody></table><!--[if (gte mso 9)|(IE)]></td><td valign="top"><![endif]--><table width="186" align="right" border="0" cellpadding="0" cellspacing="0" class="full-width-center" dir="ltr">
+													<tbody><tr>
+														<td valign="top">
+															<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" class="full-width-center">
+																<tbody><tr>
+																	<td valign="middle">
+																		<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+																			<tbody><tr>
+																				<td align="center" valign="middle" style="padding:3px;">
+																					<a href="#" style="font-size: inherit; text-decoration: none;">
+																						<img src="images/icon-facebook.png" width="25" alt="icon-facebook" style="max-width: 25px; display: block !important;">
+																					</a>
+																				</td>
+																				<td align="center" valign="middle" style="padding:3px;">
+																					<a href="#" style="font-size: inherit; text-decoration: none;">
+																						<img src="images/icon-twitter.png" width="25" alt="icon-twitter" style="max-width: 25px; display: block !important;">
+																					</a>
+																				</td>
+																				<td align="center" valign="middle" style="padding:3px;">
+																					<a href="#" style="font-size: inherit; text-decoration: none;">
+																						<img src="images/icon-youtube.png" width="25" alt="icon-youtube." style="max-width: 25px; display: block !important;">
+																					</a>
+																				</td>
+																				<td align="center" valign="middle" style="padding:3px;">
+																					<a href="#" style="font-size: inherit; text-decoration: none;">
+																						<img src="images/icon-instagram.png" width="25" alt="icon-instagram" style="max-width: 25px; display: block !important;">
+																					</a>
+																				</td>
+																			</tr>
+																		</tbody></table>
+																	</td>
+																</tr>
+															</tbody></table>
+														</td>
+													</tr>
+												</tbody></table></td>
+										</tr>
+									</tbody></table>
+								</td>
+							</tr>
+							<!-- end content container -->
+							<!-- start space -->
+							<tr>
+								<td valign="top" height="25" style="font-size: 0px; line-height: 0; border-collapse: collapse;">
+								</td>
+							</tr>
+							<!-- end space -->
+						</tbody></table>
+						<!-- end container -->
+					</td>
+				</tr>
+				<!-- END LAYOUT-1 VIEW ONLINE / LOGO / SOCIAL ICON -->
+			</table></body>
+</html>
