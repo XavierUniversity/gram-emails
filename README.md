@@ -9,6 +9,9 @@ To setup a new template, simply click "Fork", on the left-hand side of the scree
 
     cd /path/to/directory
     git clone git@bitbucket.org:XavierUniv/email-template.git
+    
+or
+	https://mcmullengreg@bitbucket.org/XavierUniv/email-template.git
 
 ### Contribution guidelines ###
 
