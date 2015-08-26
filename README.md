@@ -10,7 +10,6 @@ To setup a new template, simply click "Fork", on the left-hand side of the scree
     cd /path/to/directory
     git clone git@bitbucket.org:XavierUniv/email-template.git
 
-
 ### Contribution guidelines ###
 
 Pull requests will only be accepted if they are mods to the main template (such as an updated logo, social icons, etc.) and not for specific template features or changes.
