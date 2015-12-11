@@ -20,7 +20,7 @@ If you need to make changes to the overall repository, fork the project, make yo
 
 ###Email Content Areas
 
-- Header area with optional office or title block (*Office/Title block is optional, header is mandatory*)
+- Header area with optional office or title block (**Office/Title block is optional, header is mandatory**)
 - Heading text / image
 - 2-COL / 2-ROW / IMAGE ICON / TEXT
 - 2-col image / text
