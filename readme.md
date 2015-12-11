@@ -14,11 +14,15 @@ email launching, this template changes you should pull those into your local rep
 
 You may also consider forking the project for a particular branch of users you might be working with on a consistent basis and `branch` off for individual emails.
 
+**Reminder:** Images will need to have absolute sourcing. Xavier logos and social icons have been sourced to use the Xavier website.
+
 ###Contributing to this repository
 
 If you need to make changes to the overall repository, fork the project, make your changes and submit a pull request. Pull requests will be managed by team administrators.
 
 ###Email Content Areas
+
+[Live example](http://xavier.edu/email_blast/example/)
 
 - Header area with optional office or title block (**Office/Title block is optional, header is mandatory**)
 - Heading text / image
