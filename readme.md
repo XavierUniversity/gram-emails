@@ -22,7 +22,7 @@ If you need to make changes to the overall repository, fork the project, make yo
 
 ###Email Content Areas
 
-[Live example](http://xavier.edu/email_blast/example/)
+[Live example](https://xavieruniversity.github.io/email-template/)
 
 - Header area with optional office or title block (**Office/Title block is optional, header is mandatory**)
 - Heading text / image
